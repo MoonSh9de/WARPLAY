@@ -1,0 +1,173 @@
+/** HowItWorks */
+.how_it_works {
+    display: flex;
+
+    font-size: 1.35rem;
+    line-height: 2rem;
+}
+
+.how_it_works__column {
+    width: 50%;
+
+    padding: 30px;
+}
+
+.how_it_works__column--second {
+    padding: 60px 100px;
+}
+
+.how_it_works__text::after {
+    display: block;
+    content: ' ';
+
+    margin: 27px 0;
+
+    width: 271px;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.how_it_works__about_pc {
+    margin-bottom: 74px;
+}
+
+
+
+/** Let's play*/
+
+
+.start_play {
+    text-align: center;
+}
+
+.start_play__item {
+    display: inline;
+    padding: 0 63px;
+    margin-bottom: 90px;
+
+    position: relative;
+}
+
+.start_play__item:nth-child(-n +3)::after {
+    display: block;
+    content: "";
+
+    width: 73px;
+    height: 1px;
+
+    background: #50AFCD;
+
+    position: absolute;
+    top: 32px;
+    right: -36px;
+
+}
+
+.start_play__items {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+
+}
+
+
+/** Subscriptions*/
+.subscriptions {
+    text-align: center;
+}
+
+.rates {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.blue_line {
+    display: inline-block;
+    content: " ";
+
+    width: 582px;
+    height: 1px;
+
+    background-color: #00C5FF;
+
+    margin: 90px 0 140px;
+}
+
+.rate {
+    width: 400px;
+    height: 543px;
+
+    margin-right: 10px;
+    padding: 76px 45px 47px;
+    background-color: #1F2631;
+
+    position: relative;
+
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+.rate:last-child {
+    margin: 0;
+}
+
+.rate:hover {
+    background-color: #00C5FF;
+}
+
+.rate:hover .rate__title {
+    color: #141C24;
+}
+
+.rate:hover .rate__price {
+    color: #141C24;
+}
+
+.rate:hover .btn__choose
+{
+    background-color: #141C24;
+    color: #fff;}
+
+.rate:hover .available {
+    color: #000;
+}
+
+.rate__title {
+    text-align: left;
+
+    font-size: 36px;
+    font-family: "Roboto-Bold";
+    color: #fff;
+}
+
+.rate__price {
+    margin: 20px 0 27px;
+
+    font-size: 24px;
+    font-family: "Roboto-Medium";
+    color: #fff;
+}
+
+.available {
+    text-align: left;
+}
+
+.btn__choose {
+    padding: 15px 123px 15px;
+
+    background-color: #00C5FF;
+    border-radius: 5px;
+
+    font-family: "Aire Exterior";
+    font-size: 24px;
+    line-height: 43px;
+    color: #141C24;
+    text-decoration: none;
+
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+}

@@ -1,0 +1,83 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 70px 390px;
+
+    background-color: #171717;
+}
+
+.footer__column {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+.footer__column--first {
+    text-transform: uppercase;
+}
+
+.footer__column--second {
+    text-align: right;
+}
+
+
+.footer__logo {
+    position: relative;
+}
+.footer__rights {
+    margin: 0 20px;
+
+    font-family: "Pulsar-Original";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.41px;
+    color: #ECECEC;
+}
+
+
+.footer__design {
+    margin-right: 20px;
+
+    font-family: "Pulsar-Original";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.41px;
+    color: #838383;
+}
+
+.footer__logo--img {
+    position: absolute;
+    bottom: -5px;
+    left: -80px;
+    z-index: 1;
+
+}
+
+.footer__logo--text {
+    color: #ECECEC;
+}
+
+.footer__text {
+    font-family: "Roboto-light";
+    font-size: 12px;
+}
+
+.footer__text--files {
+    margin: 50px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 15px;
+}
+
+.fa-discord {
+    margin: 0 5px;
+}

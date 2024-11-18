@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("/assets/fonts/Roboto-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url("/assets/fonts/Roboto-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Aire Exterior";
+    src: url("/assets/fonts/ofont.ru_Aire\ Exterior.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Pulsar-Original";
+    src: url("/assets/fonts/pulsar-original.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+
+    font-weight: 400;
+}
+
+.link {
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-family: "Roboto-Medium";
+    color: #57D6FF;
+
+    position: relative;
+}
+
+.link::after {
+    display: block;
+    content: " ";
+
+    width: 100%;
+    height: 1px;
+
+    background: #57D6FF;
+
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+body{
+    margin:0;
+
+    background-color: #141C24;
+
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-light",sans-serif;
+    font-size: 21.33px;
+    line-height: 32px;
+    color:#ABABAB;
+
+    z-index: 4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 123px;
+    padding: 45px 310px 49px;
+
+    background-color: #141C24;
+    border-bottom : 2px dashed #575555 ;
+
+    position: relative;
+    z-index: 5;
+}
+
+header {
+    width: 100%;
+    height: calc(100vh + 20px);
+    margin-bottom: 97px;
+
+    border-bottom : 2px dashed #575555 ;
+
+    position: relative;
+}
+
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+
+    margin: 42px auto;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.15)
+}
+
+
+section {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+
+    margin: 42px auto;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box; /*подсчёт блока с учётом padding*/
+
+}
+
+
+.container {
+    text-align: left;
+
+    margin-bottom: 150px;
+}
+
+.logo--text {
+
+    font-family: "Pulsar-Original";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-bottom: 17px;
+
+    font-family: "Roboto-light",sans-serif;
+    font-size: 1rem;
+    line-height: 28.8px;
+    color: #57D6FF;
+}
+
+.subtitle::before {
+    display: inline-block;
+    content: ' ';
+
+    width: 50px;
+    height: 1px;
+
+    margin: 0 32px 5px 0;
+
+    background: #57D6FF;
+}
+
+.title {
+    margin-bottom: 60px;
+
+    font-family: "Aire Exterior";
+    font-size: 2.5rem;
+    color: #fff;
+}
